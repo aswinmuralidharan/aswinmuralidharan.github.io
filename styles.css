@@ -153,11 +153,12 @@ p.intro,
 
 .funders img[alt="KWF logo"] {
   height: 25px;
-  margin-left: -1.5rem;
+  margin-left: 1.5rem;
 }
 
 .funders img[alt="Longkanker Nederland logo"] {
   height: 50px;
+    margin-left: -1rem;
 }
 
 .acknowledgement {

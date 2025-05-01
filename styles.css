@@ -1,3 +1,240 @@
-.title {
-    color: green;
+/* styles.css */
+body {
+  background: url('images/Dissertation.png') center/cover no-repeat fixed;
+  background-attachment: fixed;
+  background-color: transparent;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-wrapper {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 1rem;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #0070f3;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 1rem;
+  flex-grow: 1;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+p.intro,
+.contact-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto 3rem;
+  max-width: 800px;
+}
+
+.email-button {
+  background-color: #0070f3;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.email-button:hover {
+  background-color: #005bb5;
+}
+
+.publication {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.publication img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.pub-info {
+  flex: 1;
+}
+
+.pub-info a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.pub-info a:hover {
+  text-decoration: underline;
+}
+
+.pub-info .meta {
+  font-style: italic;
+  color: #555;
+}
+
+.funders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 1rem 1rem;
+}
+
+.funders img[alt="NWO logo"] {
+  height: 50px;
+}
+
+.funders img[alt="KWF logo"] {
+  height: 25px;
+  margin-left: -1.5rem;
+}
+
+.funders img[alt="Longkanker Nederland logo"] {
+  height: 50px;
+}
+
+.acknowledgement {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+  font-size: 0.9rem;
+}
+
+.download-button a:hover {
+  background-color: #005bb5;
+}
+
+.team-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+}
+
+.member img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.member h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.member p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+.member {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.thesis-tooltip {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #333;
+  background-color: rgba(240, 240, 240, 0.95);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.member:hover .thesis-tooltip {
+  display: block;
 }
